@@ -27,7 +27,10 @@ module.exports = function (config) {
     angularCli: {
       environment: 'dev'
     },
-    reporters: ['progress', 'kjhtml', 'spec','junit'],
+    reporters: ['progress','kjhtml','spec','dots'],
+    junitReporter : {
+    outputDir: '**/test-results'
+          },
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
@@ -44,9 +47,5 @@ module.exports = function (config) {
       }
 },
     singleRun :true,
-  reporters : ['dots', 'spec'],
-  junitReporter : {
-    outputFile: 'test-results.xml'
-  },
   });
 };
