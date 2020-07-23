@@ -26,6 +26,7 @@
     "zone.js": "^0.8.14",
     "karma-coverage": "^2.0.2",
     "karma-phantomjs-launcher": "^1.0.4",
+    "karma-spec-reporter": "^0.0.32",
     "puppeteer": "^5.0.0"
   },
   "devDependencies": {
