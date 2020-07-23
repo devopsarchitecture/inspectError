@@ -43,7 +43,7 @@ module.exports = function (config) {
             '--remote-debugging-port=9222',]
       }
 },
-    singleRun = true;
+    singleRun = true,
   reporters = ['dots', 'junit'];
   junitReporter = {
     outputFile: 'test-results.xml'
