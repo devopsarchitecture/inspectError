@@ -28,6 +28,11 @@ module.exports = function (config) {
       environment: 'dev'
     },
     reporters: ['progress', 'kjhtml'],
+    junitReporter: {
+          outputDir: './reports/',
+          outputFile: 'junit-result.xml',
+          useBrowserName: false
+    },
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
