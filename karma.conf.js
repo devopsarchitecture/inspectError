@@ -38,7 +38,7 @@ module.exports = function (config) {
     junitReporter : {
       outputDir: 'junitResult',
       outputFile: 'testresult.xml',
-      xmlVersion: null,
+      xmlVersion: 1,
       useBrowserName: false,
           },
     port: 9876,
