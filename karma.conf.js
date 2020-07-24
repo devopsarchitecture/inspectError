@@ -16,6 +16,7 @@ module.exports = function (config) {
       require('karma-phantomjs-launcher'),
       require('karma-coverage'),
       require('karma-spec-reporter'),
+      require('karma-junit-reporter'),
     ],
     client:{
       clearContext: false // leave Jasmine Spec Runner output visible in browser
@@ -33,9 +34,10 @@ module.exports = function (config) {
     angularCli: {
       environment: 'dev'
     },
-    reporters: ['progress','kjhtml','spec','dots'],
+    reporters: ['progress','kjhtml','spec','dots','junit'],
     junitReporter : {
-    outputDir: '**/test-results'
+    outputDir: 'JunitResult',
+    outputFile: 'testresult.xml'
           },
     port: 9876,
     colors: true,
